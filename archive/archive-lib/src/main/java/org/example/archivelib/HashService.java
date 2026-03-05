@@ -40,7 +40,7 @@ public class HashService {
             Files.writeString(hashPath, hash);
     }
 
-    public boolean verfiy(Path file, Path hashFile) throws IOException{
+    public boolean verify(Path file, Path hashFile) throws IOException{
         return  calculateSha256(file).equals(Files.readString(hashFile).trim());
     }
 }
