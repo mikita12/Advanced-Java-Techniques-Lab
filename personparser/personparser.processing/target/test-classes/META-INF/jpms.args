@@ -1,0 +1,4 @@
+--patch-module
+personparser.processing=_
+--add-reads
+personparser.processing=ALL-UNNAMED

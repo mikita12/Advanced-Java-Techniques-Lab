@@ -1,0 +1,4 @@
+--patch-module
+personparser.data=_
+--add-reads
+personparser.data=ALL-UNNAMED
