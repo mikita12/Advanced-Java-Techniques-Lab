@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="app.Controller">
+
+    <top>
+        <HBox spacing="10">
+            <ComboBox fx:id="algorithmBox"/>
+            <Label text="K:"/>
+            <TextField fx:id="kField" prefWidth="60"/>
+            <Button text="Run" onAction="#runAnalysis"/>
+            <Button text="Add Row" onAction="#addRow"/>
+        </HBox>
+    </top>
+
+    <center>
+        <TableView fx:id="table"/>
+    </center>
+
+    <bottom>
+        <TextArea fx:id="output"/>
+    </bottom>
+
+</BorderPane>
